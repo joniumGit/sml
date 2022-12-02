@@ -1,0 +1,168 @@
+/*
+Mathematical Language Program sample file
+*/
+
+/*
+Basic Types:
+    a. int
+    b. float
+    c. string
+*/
+
+a = 1;
+b = 0.25;
+c = 'a'
+
+/*
+Normal operations:
+    a. Assign
+    b. Sum
+    c. Difference
+    d. Multiply
+    e. Divide
+    f. Power
+    g. Negate
+    h. Modulo
+
+More advanced case:
+    j. Combined with variable usage
+*/
+
+a = 1;
+b = 0 + 1;
+c = 2 - 1;
+d = 3 * 2;
+e = 6 / 2;
+f = 2 ** 2;
+g = -2;
+h = 3 % 2;
+
+/*
+Concept of true and false is simple as anything non-zero evaluates true:
+    a. '' evaluated as false
+    b. 'a' evaluated as true
+    c. 1 evaluates true
+    d. 0.1 evaluates true
+    e. 0.0 evaluates false
+    f. 0 evaluates false
+
+Logical operators:
+    g. not, !
+    h. and, &
+    i. or, |
+    j. nor, !| (negated or)
+    k. nand, !& (negated and)
+
+Also a special operator IN:
+    l. 1 in (1 2 3)
+    m. 1 not in (0 2 3)
+    n. 'a' @ ('a','b','c')
+
+And of course there is equals:
+    o. eq, =
+
+The following evaluate true
+*/
+
+a = !'';
+b = 'a';
+c = 1;
+d = 0.1;
+e = not 0.0;
+f = !0;
+g = !!1;
+h = 1 & 1;
+i = 1 | 1;
+j = 0 !| 0;
+k = 0 !& 1;
+l = 1 in (1 2 3);
+m = 1 not in (0 2 3);
+n = 'a' @ ('a','b','c');
+o = 1 = 2;
+
+/*
+Conditional Logic:
+    a. IF THEN
+    b. IF THEN DO
+    c. IF THEN DO ELSE
+    d. IF THEN DO ELSE IF THEN
+    e. IF THEN DO ELSE IF THEN DO
+    f. IF THEN DO ELSE IF THEN DO ELSE
+    g. IF THEN DO ELSE IF THEN DO ELSE DO
+
+On the same line:
+    h. IF THEN ELSE
+    i. IF THEN ELSE IF THEN
+    j. IF THEN ELSE IF THEN ELSE
+*/
+
+if a = 1 then a = 2;
+
+if b = 1 then do;
+    b = 2;
+end;
+
+if c = 1 then do;
+    c = 2;
+end;
+else c = 2;
+
+if d = 1 then do;
+    d = 2;
+else if d = 2 then d = 3;
+
+if e = 1 then do;
+    e = 2;
+else if e = 2 then do;
+    e = 3;
+end;
+
+if f = 1 then do;
+    f = 2;
+else if f = 2 then do;
+    f = 3;
+end;
+else f = 3;
+
+if g = 1 then do;
+    g = 2;
+else if g = 2 then do;
+    g = 3;
+end;
+else do;
+    g = 3;
+end;
+
+if h = 1 then h = 2 else h = 3;
+
+if i = 1 then i = 2 else if i = 2 then i = 1;
+
+if j = 1
+    then j = 2
+else if j = 2
+    then j = 1
+else j = 0;
+
+/*
+Concept of null is simple:
+    a. .
+
+Any invalid operations will map to null:
+    b. zero division
+    c. usage of null
+*/
+
+a = .;
+b = 1 / 0;
+c = . * 10;
+
+/*
+Function calls can be made:
+    a. with comma list
+    b. with space separated list
+
+Functions are provided by the language runtime
+*/
+
+a = MIN(1,2,3)
+b = min(1 2 3)
